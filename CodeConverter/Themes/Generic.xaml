@@ -1,0 +1,178 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:CodeConverter">
+
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="panelBackgroundBrush">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Color="#FFE3EFFF" Offset="0" />
+                <GradientStop Color="#FFAFD2FF" Offset="1" />
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <Style x:Key="gridSplitterStyleForResizeRows" TargetType="{x:Type GridSplitter}">
+            <Setter Property="TextElement.Foreground" Value="#FF204D89" />
+            <Setter Property="Border.BorderBrush" Value="#FF6593CF" />
+            <Setter Property="Panel.Background" Value="{StaticResource panelBackgroundBrush}" />
+            <Setter Property="Border.BorderThickness" Value="0,0,0,0" />
+            <Setter Property="Control.Margin" Value="0" />
+            <Setter Property="UIElement.SnapsToDevicePixels" Value="True" />
+            <Setter Property="UIElement.Focusable" Value="False" />
+            <Setter Property="Control.Padding" Value="7,7,7,7" />
+            <Setter Property="Control.HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Control.Height" Value="7" />
+            <Setter Property="Control.VerticalAlignment" Value="Top" />
+            <Setter Property="GridSplitter.ResizeDirection" Value="Rows" />
+            <Setter Property="FrameworkElement.Cursor" Value="SizeNS" />
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border BorderThickness="{TemplateBinding Border.BorderThickness}" BorderBrush="{TemplateBinding Border.BorderBrush}" Background="{TemplateBinding Panel.Background}">
+                            <Border BorderThickness="0,0,0,0" BorderBrush="{StaticResource panelBackgroundBrush}">
+                                <Canvas Width="50" Height="5">
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="1" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="5" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="9" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="13" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="17" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="21" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="25" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="29" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="33" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="37" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="41" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="45" Canvas.Top="0" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="49" Canvas.Top="0" />
+
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="1" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="5" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="9" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="13" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="17" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="21" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="25" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="29" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="33" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="37" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="41" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="45" Canvas.Top="3" />
+                                    <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="49" Canvas.Top="3" />
+
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="4" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="8" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="12" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="16" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="20" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="24" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="28" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="32" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="36" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="40" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="44" Canvas.Top="3" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="48" Canvas.Top="3" />
+
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="4" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="8" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="12" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="16" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="20" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="24" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="28" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="32" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="36" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="40" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="44" Canvas.Top="0" />
+                                    <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="48" Canvas.Top="0" />
+                                </Canvas>
+                            </Border>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    <Style x:Key="gridSplitterStyleForResizeColumns" TargetType="{x:Type GridSplitter}">
+        <Setter Property="TextElement.Foreground" Value="#FF204D89" />
+        <Setter Property="Border.BorderBrush" Value="#FF6593CF" />
+        <!--<Setter Property="Panel.Background" Value="{StaticResource panelBackgroundBrush}" />-->
+        <Setter Property="Border.BorderThickness" Value="0,0,0,0" />
+        <Setter Property="UIElement.SnapsToDevicePixels" Value="True" />
+        <Setter Property="UIElement.Focusable" Value="False" />
+        <Setter Property="Control.Padding" Value="7,7,7,7" />
+        <Setter Property="FrameworkElement.Cursor" Value="SizeWE" />
+        <Setter Property="Control.HorizontalAlignment" Value="Left" />
+        <Setter Property="Control.Width" Value="7" />
+        <Setter Property="Control.Margin" Value="0" />
+        <Setter Property="Control.VerticalAlignment" Value="Stretch" />
+        <Setter Property="GridSplitter.ResizeDirection" Value="Columns" />
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border BorderThickness="{TemplateBinding Border.BorderThickness}" BorderBrush="{TemplateBinding Border.BorderBrush}" Background="{TemplateBinding Panel.Background}">
+                        <Border BorderThickness="0,0,0,0" BorderBrush="{StaticResource panelBackgroundBrush}">
+                            <Canvas Width="5" Height="50">
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="1" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="5" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="9" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="13" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="17" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="21" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="25" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="29" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="33" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="37" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="41" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="45" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="49" />
+
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="0" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="4" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="8" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="12" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="16" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="20" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="24" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="28" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="32" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="36" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="40" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="44" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="0" Canvas.Top="48" />
+
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="1" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="5" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="9" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="13" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="17" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="21" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="25" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="29" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="33" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="37" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="41" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="45" />
+                                <Rectangle Fill="{StaticResource panelBackgroundBrush}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="49" />
+
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="0" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="4" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="8" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="12" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="16" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="20" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="24" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="28" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="32" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="36" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="40" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="44" />
+                                <Rectangle Fill="{TemplateBinding TextElement.Foreground}" Width="2" Height="2" Canvas.Left="3" Canvas.Top="48" />
+                            </Canvas>
+                        </Border>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
